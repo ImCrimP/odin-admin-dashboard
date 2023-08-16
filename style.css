@@ -1,0 +1,30 @@
+body{
+    min-height: 100vh;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+    height: 100vh;
+}
+
+#sidebarContainer{
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    background-color: rgb(68, 92, 200);
+}
+
+#headerContainer{
+    grid-column: 2 / 6;
+    grid-row: 1;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 7px 2px -2px rgba(99, 99, 99, 0.2);
+    position: relative;
+}
+
+#mainContainer{
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+    background-color: rgb(232, 232, 232);
+}
