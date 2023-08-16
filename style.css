@@ -1,5 +1,6 @@
 body{
     min-height: 100vh;
+    margin: 0;
 }
 
 #container{
@@ -9,10 +10,31 @@ body{
     height: 100vh;
 }
 
+.iconHeader{
+    width: 5vw;
+    fill: white;
+}
+
+.icon{
+    width: 2vw;
+    fill: white
+}
+
 #sidebarContainer{
     grid-column: 1 / 2;
     grid-row: 1 / 6;
     background-color: rgb(68, 92, 200);
+    color: white;
+    padding: 20px;
+}
+
+#sidebardHeaderContainer{
+    display: flex;
+    align-items: center;
+}
+
+#sidebarHeader{
+    font-size: 32px;
 }
 
 #headerContainer{
@@ -22,6 +44,23 @@ body{
     box-shadow: 0 7px 2px -2px rgba(99, 99, 99, 0.2);
     position: relative;
 }
+
+#allOptions{
+    display: grid;
+    gap: 8vh;
+}
+
+.sidebarOptions{
+    display: grid;
+    gap: 2vh;
+}
+
+.optionContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 
 #mainContainer{
     grid-column: 2 / 6;
